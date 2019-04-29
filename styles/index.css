@@ -7,6 +7,7 @@ html{
   font-family: helvetica;
   font-size: 18px;
   line-height: 1.4;
+  width:100%;
 }
 /* HEADER CONTENT*/
 
@@ -94,7 +95,7 @@ text-transform: uppercase;
   justify-content: space-around;
   align-items: center;
   margin:3rem auto;
-  width: 50%;
+  width: 70%;
 }
 
 .png-container img{
@@ -144,3 +145,139 @@ footer img{
   height: 1.5rem;
 }
 /*FOOTER SECTION*/
+/******************MEDIA QUERIES TABLETS 960PX********************/
+@media only screen and (max-width: 960px){
+  header{
+    display: flex;
+    background-color: cadetblue;
+    width:100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    color: white;
+  }
+  .main-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url("../images/glasses-bg.png");
+    background-repeat: no-repeat;
+    background-position: 40%;
+    background-size: cover;
+   height: 22rem;
+   z-index: -2;
+   margin-bottom: 2rem;
+  }
+  .main-content{
+  margin-right: 2rem;
+  }
+  .message-box{
+    height:100%;
+    width: 100%;
+    background-color: white;
+    font-size: 1.33rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .message-box h3{
+  margin: 1.5rem 5rem;
+  padding-top: 20px;
+  text-transform: uppercase;
+  }
+  .appointment{
+    margin: 5% 5% 5% 5%;
+  }
+  }
+  @media only screen and ( max-width:550px){
+    header span{
+      display: none;
+    }
+    .main-container{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      background-image: url("../images/glasses-bg.png");
+      background-repeat: no-repeat;
+      background-position:  left;
+      background-size: cover;
+     height: 17rem;
+     z-index: -2;
+     margin-bottom: 3rem;
+    }
+    .main-content{
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    }
+    .message-box{
+      height:80%;
+      width: 100%;
+      background-color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1;
+    }
+    .message-box h3{
+    margin: 1.5rem 5rem;
+    padding-top: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    }
+
+
+    .secondary-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 11rem;
+    text-align: center;
+    margin: 6rem auto;
+  }
+  .png-container{
+    flex-direction: column;
+
+  }
+  .png-container img{
+    margin:1.55rem;
+  }
+  .ending-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  }
+  .philosophy{
+    display; flex;
+    width: 100%;
+    margin: 15% 5% 5% 5%;
+  }
+  .philosophy h3{
+  width:100%;
+  margin:0 auto 1rem auto;
+  text-align: center;
+  }
+  .philosophy p, .appointment p{
+    margin:auto;
+    font-size: .77rem;
+    width:50%;
+    text-align: center;
+
+  }
+  .appointment{
+    width: 100%;
+    margin: 15% 5%;
+  }
+  .appointment h3{
+  width:100%;
+  margin:0 auto 1rem auto;
+  text-align: center;
+  }
+  footer img{
+    margin:3rem auto;
+  }
+  footer span{
+    display: none;
+  }
+  }
